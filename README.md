@@ -1,5 +1,7 @@
 # Traffic Sign Recognition using TensorFlow Object Detection API and Fine-tuning CNN-based architectures
 
+
+
 ## Introduction
 
 Recently, road traffic safety has been an exciting research area in the automotive industry. One of the important features that has been developed to enhance autonomous vehicles perception and ADAS is traffic sign recognition. 
@@ -32,7 +34,13 @@ We'll cover up the power of the TFOD API, pre-trained state-of-the-art architect
 
 ## Training
 
+- We will use Faster R-CNN + ResNet-101 architecture which has been trained on the Common Objects
+  in Context (COCO) dataset. The network has been fine-tuned to train on the LISA Traffic Signs
+  dataset. The model was trained on several GPU cards to compare the training time among them and exhibit how great the GPUs are in deep learning and make it clear how performance over generations have been evolved.
+
 ***Currently in progress***
+
+
 
 ## Prediction
 
@@ -89,16 +97,5 @@ Instructions for running the scripts:
 - ### Classifying traffic signs in an image file
 
   **Currently in progress***
-
-  ### 
-
-
-
-
-
-**Currently in progress***
-
-
-
 
 
