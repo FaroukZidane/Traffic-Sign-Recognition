@@ -6,7 +6,7 @@ Recently, road traffic safety has been an exciting research area in the automoti
 
 
 
-<img src="https://www.bccourier.com/wp-content/uploads/2020/02/Traffic-Sign-Recognition-System-Market.jpg" style="zoom: 25%;" />
+<img src="https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/intro.jpg" style="zoom: 25%;" />
 
 
 
