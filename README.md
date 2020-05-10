@@ -36,14 +36,16 @@ We'll cover up the power of the TFOD API, pre-trained state-of-the-art architect
 
 ## Prediction
 
-### 	Live web-cam stream
+- ### 	Predicting traffic signs in a live web-cam stream
+
+  
 
 This allows the model to classify traffic signs captured from live camera stream.
 
-**Run Camera Trial on 3 classes only (pedestrian, stop, traffic ahead):**
+Run Camera Trial on 3 classes only (pedestrian, stop, traffic ahead):
 
 
-First open setup.sh file (Traffic-Sign-Recognition/setup.sh) which look like this:
+First open setup_py_path.sh file in project directory which look like this:
 
 ```
 #!/bin/sh
@@ -67,17 +69,31 @@ $ python PATH_TO_DIR/Traffic-Sign-Recognition/predict_video_camera_trial.py \
 
 *NOTE:*
 
-1. *Remove quotations when you paste any of the above paths and names* 
-2. The paths should begin with **/home/...** and not **home/...**
+- *Remove quotations when you paste any of the above paths and names* 
+- The paths should begin with **/home/...** and not **home/...**
 
-
+Instructions for running the scripts:
 
 1. workon "VIRTUAL_ENV_NAME" replace it with your own virtual environment name (if you have)
 2. Go to the project directory
 3. Source the file setup.sh
 4. Run the prediction script, specify the frozen model location, class labels and number of classes
 
-****
+
+
+- ### 	Classifying traffic signs in a video file
+
+  **Currently in progress***
+
+- ### Classifying traffic signs in an image file
+
+  **Currently in progress***
+
+  ### 
+
+
+
+
 
 **Currently in progress***
 
