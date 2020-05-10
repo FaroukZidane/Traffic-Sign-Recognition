@@ -10,7 +10,7 @@ Recently, road traffic safety has been an exciting research area in the automoti
 
 
 
-This project aims to use computer vision algorithm to classify road signs through the TensorFlow Object Detection API by fine-tuning several CNN-based neural network architectures.
+This project aims to use computer vision algorithm to classify road signs through the TensorFlow Object Detection API by fine-tuning several CNN-based architectures.
 
 We'll cover up the power of the TFOD API, pre-trained state-of-the-art architectures and the amazing performance boost that the GPUs add in Deep Learning.
 
