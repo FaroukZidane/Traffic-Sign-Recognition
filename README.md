@@ -4,9 +4,7 @@
 
 Recently, road traffic safety has been an exciting research area in the automotive industry. One of the important features that has been developed to enhance autonomous vehicles perception and ADAS is traffic sign recognition. 
 
-![](/home/farouk/Station/ComputerVision/Project_Repo/Traffic-Sign-Recognition/cdd4049c9a954f97e71cfda220a07579.jpg)
-
-
+<img src="https://www.bccourier.com/wp-content/uploads/2020/02/Traffic-Sign-Recognition-System-Market.jpg" style="zoom:33%;" />
 
 This project aims to use computer vision algorithm to classify road signs through the TensorFlow Object Detection API by fine-tuning several CNN-based neural network architectures.
 
