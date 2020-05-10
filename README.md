@@ -19,9 +19,16 @@ We'll cover up the power of the TFOD API, pre-trained state-of-the-art architect
 ## Pre-requisites
 
 - Python 3.6.9
+
 - TensorFlow 1.14
+
 - Keras 2.0.8
+
 - TensorFlow Object Detection API
+
+  *NOTE: The versions of the modules mentioned above are the exact versions used in this project. I faced some problems regarding newer Keras versions, so please confirm if it works with different versions with you.*
+  
+  
 
 ## Training
 
@@ -29,9 +36,50 @@ We'll cover up the power of the TFOD API, pre-trained state-of-the-art architect
 
 ## Prediction
 
-1. ### 	Live web-cam stream
+### 	Live web-cam stream
 
-   ***Currently in progress***
+This allows the model to classify traffic signs captured from live camera stream.
+
+**Run Camera Trial on 3 classes only (pedestrian, stop, traffic ahead):**
+
+
+First open setup.sh file (Traffic-Sign-Recognition/setup.sh) which look like this:
+
+```
+#!/bin/sh
+
+export PYTHONPATH=$PYTHONPATH:PATH_TO_DIR/models/research:PATH_TO_DIR/models/research/slim
+```
+
+remove PATH_TO_DIR and add your own path of the TFOD API
+
+**Then open up a terminal in the project directory and run the following after reading and applying the instructions below):**
+
+```
+$ workon "VIRTUAL_ENV_NAME"
+$ cd "PATH_TO_DIR/Traffic-Sign-Recognition"
+$ source setup.sh
+$ python PATH_TO_DIR/Traffic-Sign-Recognition/predict_video_camera_trial.py \
+--model PATH_TO_DIR/Traffic-Sign-Recognition/lisa/experiments/exported_model/frozen_inference_graph.pb \
+--labels PATH_TO_DIR/Traffic-Sign-Recognition/lisa/records/classes.pbtxt \
+--num-classes 3
+```
+
+*NOTE:*
+
+1. *Remove quotations when you paste any of the above paths and names* 
+2. The paths should begin with **/home/...** and not **home/...**
+
+
+
+1. workon "VIRTUAL_ENV_NAME" replace it with your own virtual environment name (if you have)
+2. Go to the project directory
+3. Source the file setup.sh
+4. Run the prediction script, specify the frozen model location, class labels and number of classes
+
+****
+
+**Currently in progress***
 
 
 
