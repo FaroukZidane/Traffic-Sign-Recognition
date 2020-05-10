@@ -4,9 +4,36 @@
 
 Recently, road traffic safety has been an exciting research area in the automotive industry. One of the important features that has been developed to enhance autonomous vehicles perception and ADAS is traffic sign recognition. 
 
+
+
 <img src="https://www.bccourier.com/wp-content/uploads/2020/02/Traffic-Sign-Recognition-System-Market.jpg" style="zoom: 25%;" />
+
+
 
 This project aims to use computer vision algorithm to classify road signs through the TensorFlow Object Detection API by fine-tuning several CNN-based neural network architectures.
 
 We'll cover up the power of the TFOD API, pre-trained state-of-the-art architectures and the amazing performance boost that the GPUs add in Deep Learning.
+
+
+
+## Pre-requisites
+
+- Python 3.6.9
+- TensorFlow 1.14
+- Keras 2.0.8
+- TensorFlow Object Detection API
+
+## Training
+
+***Currently in progress***
+
+## Prediction
+
+1. ### 	Live web-cam stream
+
+   ***Currently in progress***
+
+
+
+
 
