@@ -26,19 +26,41 @@ We'll cover up the power of the TFOD API, pre-trained state-of-the-art architect
 
 - Keras 2.0.8
 
+- OpenCV 4.2.0
+
 - TensorFlow Object Detection API
 
-  *NOTE: The versions of the modules mentioned above are the exact versions used in this project. I faced some problems regarding newer Keras versions, so please confirm if it works with different versions with you.*
+  *NOTE: The versions of the modules mentioned above are the exact versions used in this project. I faced some problems regarding newer Keras versions with tensorflow 1.14, so please confirm if it works with different versions with you.*
   
   
 
 ## Training
 
-- We will use Faster R-CNN + ResNet-101 architecture which has been trained on the Common Objects
-  in Context (COCO) dataset. The network has been fine-tuned to train on the LISA Traffic Signs
-  dataset. The model was trained on several GPU cards to compare the training time among them and exhibit how great the GPUs are in deep learning and make it clear how performance over generations have been evolved.
+We will use several state-of-the-art architecture and measure many performance aspects from training to prediction. All has been trained on the Common Objects in Context (COCO) dataset. The network has been fine-tuned to train on the LISA Traffic Signs dataset. The model was trained on single GPU cards to compare the training time among them and exhibit how great the GPUs are in deep learning and make it clear how performance over generations have been evolved.
 
-***Currently in progress***
+- Faster-R-CNN came as a development of Fast R-CNN and R-CNN by , by Girshick et al.
+
+  Using Faster R-CNN + ResNet-101 architecture:
+
+Training performance:
+
+Classification loss
+
+![https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png]()
+
+Localization loss
+
+![https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localization_loss.png]()
+
+RPN localization loss
+
+![https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localizationRPN_loss.png]()
+
+*Training performance on GTX 1080Ti 11GB*
+
+
+
+***Currently still in progress***
 
 
 
@@ -92,10 +114,10 @@ Instructions for running the scripts:
 
 - ### 	Classifying traffic signs in a video file
 
-  **Currently in progress***
+  **Currently still in progress***
 
 - ### Classifying traffic signs in an image file
 
-  **Currently in progress***
+  **Currently still in progress***
 
 
