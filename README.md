@@ -16,6 +16,8 @@ This project aims to use computer vision algorithm to classify road signs throug
 
 We'll cover up the power of the TFOD API, pre-trained state-of-the-art architectures and the amazing performance boost that the GPUs add in Deep Learning.
 
+------
+
 
 
 ## Pre-requisites
@@ -32,31 +34,39 @@ We'll cover up the power of the TFOD API, pre-trained state-of-the-art architect
 
   *NOTE: The versions of the modules mentioned above are the exact versions used in this project. I faced some problems regarding newer Keras versions with tensorflow 1.14, so please confirm if it works with different versions with you.*
   
+  ------
+  
   
 
 ## Training
 
 We will use several state-of-the-art architecture and measure many performance aspects from training to prediction. All has been trained on the Common Objects in Context (COCO) dataset. The network has been fine-tuned to train on the LISA Traffic Signs dataset. The model was trained on single GPU cards to compare the training time among them and exhibit how great the GPUs are in deep learning and make it clear how performance over generations have been evolved.
 
+### Training performance for several architectures:
+
 - Faster-R-CNN came as a development of Fast R-CNN and R-CNN by , by Girshick et al.
 
   Using Faster R-CNN + ResNet-101 architecture:
 
-Training performance:
+  Training performance:
 
 Classification loss
 
-![https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png]()
+![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png)
 
 Localization loss
 
-![https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localization_loss.png]()
+![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localization_loss.png)
 
 RPN localization loss
 
-![https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localizationRPN_loss.png]()
+![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localizationRPN_loss.png)
 
 *Training performance on GTX 1080Ti 11GB*
+
+
+
+### 	GPU vs CPU
 
 
 
@@ -65,6 +75,14 @@ RPN localization loss
 
 
 ## Prediction
+
+### Prediction performance
+
+Faster-R-CNN + ResNet101:
+
+We could achieve 7-9 FPS on GTX 1080Ti 11G.
+
+### Prediction implementation
 
 - ### 	Predicting traffic signs in a live web-cam stream
 
