@@ -50,9 +50,9 @@ We will use several state-of-the-art architecture and measure many performance a
 
   Training performance:
 
-Classification loss
 
-![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png)
+
+![Classification loss](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png)
 
 Localization loss
 
@@ -71,6 +71,8 @@ RPN localization loss
 
 
 ***Currently still in progress***
+
+------
 
 
 
