@@ -64,15 +64,7 @@ Training in this project was done first on three classes only, then eight.
 
   Faster R-CNN came as a development of Fast R-CNN and R-CNN by , by Girshick et al. Next, we'll show up the training and evalutaion metrics when using Faster R-CNN + ResNet-101 architecture:
   
-  ```html
-  <p align="center">
-    <img width="460" height="300" src="https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png/460/300">
-  </p>
-  ```
-
-```
-
-```
+  
 
 ​		Classification loss
 
@@ -118,11 +110,11 @@ Training in this project was done first on three classes only, then eight.
 
 ### Prediction performance
 
-Faster-R-CNN + ResNet101:
+- #### 	Faster-R-CNN + ResNet101:
 
 We could achieve 7-9 FPS on GTX 1080Ti 11G.
 
-SSD + Inception:
+- #### 	SSD + Inception:
 
 We could achieve +30 FPS on GTX 1080Ti 11G. We are here limited with our camera FPS which is rated at 30 only. So actually this model could achieve higher FPS in case we have a better camera.
 
