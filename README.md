@@ -44,7 +44,19 @@ We will use several state-of-the-art architecture and measure many performance a
 
 ### LISA Traffic Sign Dataset
 
+The LISA Traffic Sign Dataset is a set of videos and annotated frames containing US traffic signs.
 
+- 47 US sign types
+- 7855 annotations on 6610 frames.
+- Sign sizes from 6x6 to 167x168 pixels.
+- Images obtained from different cameras. Image sizes vary from 640x480 to 1024x522 pixels.
+- Some images in color and some in grayscale.
+- Full version of the dataset includes videos for all annotated signs.
+- Each sign is annotated with sign type, position, size, occluded (yes/no), on side road (yes/no).
+- All annotations are save in plain text .csv-files.
+- Includes a set of Python tools to handle the annotations and easily extract relevant signs from the dataset.
+
+Training in this project was done first on three classes only, then eight.
 
 ### Training performance for several architectures:
 
@@ -55,8 +67,6 @@ We will use several state-of-the-art architecture and measure many performance a
 
 
 ​		Classification loss
-
-
 
 !['Classification loss'](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png)
 
@@ -74,9 +84,17 @@ We will use several state-of-the-art architecture and measure many performance a
 
 - #### SSD + Inception V
 
-  We could achieve +30 FPS on GTX 1080Ti 11G. We are here limited with our camera FPS which is rated at 30 only. So actually this model could achieve higher FPS in case we have a better camera.
+  mAP at 0.50 IOU.
 
+  ![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/ssd/mAPS_IOU50.png)
 
+  Classification loss
+
+  ![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/ssd/ClassificationLoss.png)
+
+  Localization loss
+
+![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/ssd/LocalizationLoss.png)
 
 ### 	GPU vs CPU
 
@@ -95,6 +113,12 @@ We will use several state-of-the-art architecture and measure many performance a
 Faster-R-CNN + ResNet101:
 
 We could achieve 7-9 FPS on GTX 1080Ti 11G.
+
+SSD + Inception:
+
+We could achieve +30 FPS on GTX 1080Ti 11G. We are here limited with our camera FPS which is rated at 30 only. So actually this model could achieve higher FPS in case we have a better camera.
+
+
 
 ### Prediction implementation
 
