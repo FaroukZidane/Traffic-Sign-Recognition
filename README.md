@@ -68,7 +68,11 @@ Training in this project was done first on three classes only, then eight.
 <img align="left" width="100" height="100" src="https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png">
 ```
 
-## 
+```
+<p align="center">
+  <img width="460" height="300" src="https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png"></img>
+</p>
+```
 
 ​		Classification loss
 
