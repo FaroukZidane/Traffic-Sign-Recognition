@@ -25,7 +25,7 @@ ap.add_argument("-l", "--labels", required=True,
 	help="labels file")
 
 #################Modify
-# Comment our the parse commands to input and output a video
+# Comment out the parse commands to input and output a video
 # ap.add_argument("-i", "--input", required=True,
 # 	help="path to input video")
 # ap.add_argument("-o", "--output", required=True,
@@ -154,9 +154,9 @@ with model.as_default():
 			fps.update()
 			fps.stop()
 			
-			fps_str = ( "FPS: " + str(round(fps.fps(), 2)) )
+			fps_str = ( "FPS: " + str(round(fps.fps(), 1)) )
 			cv2.putText(output, fps_str, (20, 20),
-				cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[0], 1)
+				cv2.FONT_HERSHEY_SIMPLEX, 1, COLORS[0], 1)
 			cv2.imshow('frame', output)
 			if cv2.waitKey(1) & 0xFF == ord('q'):
 				break

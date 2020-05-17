@@ -42,27 +42,39 @@ We'll cover up the power of the TFOD API, pre-trained state-of-the-art architect
 
 We will use several state-of-the-art architecture and measure many performance aspects from training to prediction. All has been trained on the Common Objects in Context (COCO) dataset. The network has been fine-tuned to train on the LISA Traffic Signs dataset. The model was trained on single GPU cards to compare the training time among them and exhibit how great the GPUs are in deep learning and make it clear how performance over generations have been evolved.
 
+### LISA Traffic Sign Dataset
+
+
+
 ### Training performance for several architectures:
 
-- Faster-R-CNN came as a development of Fast R-CNN and R-CNN by , by Girshick et al.
+- #### Faster-R-CNN + ResNet-101
 
-  Using Faster R-CNN + ResNet-101 architecture:
+  Faster R-CNN came as a development of Fast R-CNN and R-CNN by , by Girshick et al. Next, we'll show up the training and evalutaion metrics when using Faster R-CNN + ResNet-101 architecture:
 
-  Training performance:
+
+
+​		Classification loss
 
 
 
 !['Classification loss'](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png)
 
-Localization loss
+​		Localization loss
 
 ![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localization_loss.png)
 
-RPN localization loss
+​		RPN localization loss
 
 ![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/localizationRPN_loss.png)
 
 *Training performance on GTX 1080Ti 11GB*
+
+
+
+- #### SSD + Inception V
+
+  We could achieve +30 FPS on GTX 1080Ti 11G. We are here limited with our camera FPS which is rated at 30 only. So actually this model could achieve higher FPS in case we have a better camera.
 
 
 
