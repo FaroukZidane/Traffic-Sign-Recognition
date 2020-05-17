@@ -63,12 +63,12 @@ Training in this project was done first on three classes only, then eight.
 - #### Faster-R-CNN + ResNet-101
 
   Faster R-CNN came as a development of Fast R-CNN and R-CNN by , by Girshick et al. Next, we'll show up the training and evalutaion metrics when using Faster R-CNN + ResNet-101 architecture:
-
-```
-<p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
-```
+  
+  ```html
+  <p align="center">
+    <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  </p>
+  ```
 
 ```
 
@@ -76,7 +76,7 @@ Training in this project was done first on three classes only, then eight.
 
 ​		Classification loss
 
-!['Classification loss'](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png#right)
+!['Classification loss'](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/classification_loss.png)
 
 ​		Localization loss
 
