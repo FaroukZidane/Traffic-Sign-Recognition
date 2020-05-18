@@ -126,7 +126,7 @@ This allows the model to classify traffic signs captured from live camera stream
 
 Instructions
 
-1. **open setup_py_path.sh file in project directory which look like this:**
+1. **open setup_py_path.sh file in project directory which look like this:****
 
 ```
 #!/bin/sh
@@ -136,7 +136,7 @@ export PYTHONPATH=$PYTHONPATH:PATH_TO_DIR/models/research:PATH_TO_DIR/models/res
 
 remove PATH_TO_DIR and add your own path of the TFOD API
 
-**2. Then open up a terminal in the project directory and run the following after reading and applying the instructions below:**
+2. **Then open up a terminal in the project directory and run the following after reading and applying the 	instructions below:****
 
 ```
 $ workon "VIRTUAL_ENV_NAME"
