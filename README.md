@@ -199,3 +199,5 @@ Instructions for running the scripts:
   3. Source the file setup.sh.
   4. Specify the frozen model location, class labels and number of classes, input video/image file and output video/image file.
   5. Run!
+  
+  **Prediction output sample: [CLICK HERE](https://youtu.be/dFFQ_mR1KII)**
