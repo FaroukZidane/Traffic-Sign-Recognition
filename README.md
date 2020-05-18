@@ -179,22 +179,20 @@ Instructions for running the scripts:
 
   remove PATH_TO_DIR and add your own path of the TFOD API
 
-  **2. Then open up a terminal in the project directory and run the following after reading and applying the instructions below:**
+  
 
-- 1. **open setup_py_path.sh file in project directory**
+  2. **Then open up a terminal in the project directory and run the following after reading and applying the instructions below:**
 
-  2. **Then open up a terminal in the project directory and run the following**
-
-     ```
-     $ workon "VIRTUAL_ENV_NAME"
-     $ cd "PATH_TO_DIR/Traffic-Sign-Recognition"
-     $ source setup.sh
-     $ python predict_video.py \
-     --model PATH_TO_DIR/Traffic-Sign-Recognition/ssd_exported_model/frozen_inference_graph.pb \
-     --labels PATH_TO_DIR/Traffic-Sign-Recognition/lisa/records/classes.pbtxt \
-     --input example_input.avi \
-     -output output.avi --num-classes 8 \
-     ```
+  ```
+  $ workon "VIRTUAL_ENV_NAME"
+  $ cd "PATH_TO_DIR/Traffic-Sign-Recognition"
+  $ source setup.sh
+  $ python predict_video.py \
+  --model PATH_TO_DIR/Traffic-Sign-Recognition/ssd_exported_model/frozen_inference_graph.pb \
+  --labels PATH_TO_DIR/Traffic-Sign-Recognition/lisa/records/classes.pbtxt \
+  --input example_input.avi \
+  -output output.avi --num-classes 8 \
+  ```
 
   1. workon "VIRTUAL_ENV_NAME" replace it with your own virtual environment name (if you have).
   2. Go to the project directory.
