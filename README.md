@@ -96,12 +96,6 @@ Training in this project was done first on three classes only, then eight.
 
 ![](https://github.com/FaroukZidane/Traffic-Sign-Recognition/raw/master/doc/images/ssd/LocalizationLoss.png)
 
-### 	GPU vs CPU
-
-
-
-***Currently still in progress***
-
 ------
 
 
@@ -128,7 +122,7 @@ We could achieve +30 FPS on GTX 1080Ti 11G. We are here limited with our camera 
 
   
 
-This allows the model to classify traffic signs captured from live camera stream. Currently, it is trained to classify 3 classes only pedestrian, stop, traffic ahead.
+This allows the model to classify traffic signs captured from live camera stream. Currently, it is trained to classify 8 classes only.
 
 Instructions
 
@@ -151,7 +145,7 @@ $ source setup.sh
 $ python PATH_TO_DIR/Traffic-Sign-Recognition/predict_video_camera_trial.py \
 --model PATH_TO_DIR/Traffic-Sign-Recognition/lisa/experiments/exported_model/frozen_inference_graph.pb \
 --labels PATH_TO_DIR/Traffic-Sign-Recognition/lisa/records/classes.pbtxt \
---num-classes 3
+--num-classes 8
 ```
 
 *NOTE:*
@@ -161,19 +155,49 @@ $ python PATH_TO_DIR/Traffic-Sign-Recognition/predict_video_camera_trial.py \
 
 Instructions for running the scripts:
 
-1. workon "VIRTUAL_ENV_NAME" replace it with your own virtual environment name (if you have)
-2. Go to the project directory
-3. Source the file setup.sh
-4. Run the prediction script, specify the frozen model location, class labels and number of classes
+1. workon "VIRTUAL_ENV_NAME" replace it with your own virtual environment name (if you have).
+2. Go to the project directory.
+3. Source the file setup.sh.
+4. Specify the frozen model location, class labels and number of classes.
+5. Run!
 
 
 
-- ### 	Classifying traffic signs in a video file
+- ### 	Classifying traffic signs in a video/image file
 
-  **Currently still in progress***
+- This allows the model to classify traffic signs captured from live camera stream. Currently, it is trained to classify 8 classes only.
 
-- ### Classifying traffic signs in an image file
+  Instructions
 
-  **Currently still in progress***
+  1. **open setup_py_path.sh file in project directory which look like this:**
 
+  ```
+  #!/bin/sh
+  
+  export PYTHONPATH=$PYTHONPATH:PATH_TO_DIR/models/research:PATH_TO_DIR/models/research/slim
+  ```
 
+  remove PATH_TO_DIR and add your own path of the TFOD API
+
+  **2. Then open up a terminal in the project directory and run the following after reading and applying the instructions below:**
+
+- 1. **open setup_py_path.sh file in project directory**
+
+  2. **Then open up a terminal in the project directory and run the following**
+
+     ```
+     $ workon "VIRTUAL_ENV_NAME"
+     $ cd "PATH_TO_DIR/Traffic-Sign-Recognition"
+     $ source setup.sh
+     $ python predict_video.py \
+     --model PATH_TO_DIR/Traffic-Sign-Recognition/ssd_exported_model/frozen_inference_graph.pb \
+     --labels PATH_TO_DIR/Traffic-Sign-Recognition/lisa/records/classes.pbtxt \
+     --input example_input.avi \
+     -output output.avi --num-classes 8 \
+     ```
+
+  1. workon "VIRTUAL_ENV_NAME" replace it with your own virtual environment name (if you have).
+  2. Go to the project directory.
+  3. Source the file setup.sh.
+  4. Specify the frozen model location, class labels and number of classes, input video/image file and output video/image file.
+  5. Run!
